@@ -20,7 +20,7 @@ def root_endpoint():
     - Return a simple JSON message confirming the server is running.
     - Example response: {"message": "Server is live!"}
     """
-    pass
+    return {"message": "Server is live!"}, 200
 
 @app.get("/hello/{name}")
 def greet_user(name: str):

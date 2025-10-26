@@ -16,6 +16,12 @@ def read_root():
 def read_item(item_id: int, q: str | None = None):
     return {"item_id": item_id, "query": q}
 
+
+
+
+
+
+
 class Item(BaseModel):
     name: str
     description: str | None = None
